@@ -1,0 +1,189 @@
+header{
+  border: solid 1px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+
+
+header h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+header nav{
+  display: flex;
+  gap: 10px;
+  margin-right: 30px;
+}
+
+header p{
+  font-size: 14px;
+}
+
+.hero-Top{
+  text-align: center;
+  margin: 15px;
+  border: solid 1px black;
+}
+
+.hero-Top h2{
+  font-size: 20px;
+}
+
+.hero-Top h3{
+  font-size: 15px;
+}
+
+.hero-Top h1{
+  font-size: 32px;
+  font-weight: bold;
+}
+
+/* ーーーベースの装飾ーーー */
+.hero-machine{
+  background-color: #bce2fa;  /* デザイン案に近い薄い青 */
+  padding: 40px 20px 80px;
+  border: solid 2px #333;
+  margin: 15px;
+  font-family: sans-serif;
+}
+
+.hero-machine h1{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* ーーーデカい画像で細かな画像の転換ーーー */
+.machine-introduction{
+  display: flex;  /* 横並びにする */
+  justify-content: center;   /* 中央寄せ */
+  align-items: flex-start; /* 上端をそろえる */
+  gap: 120px;/* 間の広さを調節できる */
+}
+
+/* 左のでかい画像の親<div>   */
+.machine-image{
+  flex: 1;
+  display: flex;/* justify-content適用のため */
+  justify-content: flex-end;/* メイン画像を親<div>内の一番右に置く */
+}
+
+/* 左のでかい画像のid */
+#main-image{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+
+}
+
+
+/* 右の説明文<p>と画像六つの親 */
+.machine-content{
+  flex:1;
+}
+
+/* 右上の説明文 */
+.machine-content p{
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+/* <li><img></li>六つの親 */
+.machine-thumbnails{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+/* 画像を囲む<li>の設定 */
+.placeholder-thumb{
+  width: 140px;
+  height: 140px;
+  overflow: hidden;/* 画像が<li>からはみ出たら隠す */
+  cursor: pointer;/* 画像にカーソルを合わせたら、指マークに変更する */
+  margin-bottom: 10px;/* 上下の画像のくっつきを阻止 */
+}
+
+.placeholder-thumb img{
+  width: 100%;/* 箱の幅に対して100％ */
+  height: 100%;/* 箱の幅に対して100％ */
+  object-fit: cover;/* 要素を拡大・縮小し、縦横比を維持する役割 */
+}
+
+/* ---WORKOUT部の説明レイアウト--- */
+/* WORKOUT部説明のすべての親 */
+.hero-AboutWorkOut{
+  border: solid 1px black;
+  margin: 15px;
+  width: 80%;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.hero-AboutWorkOut h2{
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.hero-AboutWorkOut p{
+  text-align: center;
+}
+
+/* ---Googleマップと利用時間などの説明--- */
+/* place全体の親 */
+.hero-place{
+  border: solid 1px black;
+  margin:15px;
+
+}
+
+.hero-place h1{
+  font-size: 32px;
+  text-align: center;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* マップと説明文 */
+.place{
+  padding: 60px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+
+}
+
+
+/* Googleマップのiframeを含んでいるdivクラス */
+.map{
+  border: solid 1px #333;
+}
+
+.Google-map{
+  width: 550px;
+  height: 500px;
+  margin: 20px;
+}
+
+/* placeの右の説明文 */
+.map-About{
+  text-align: center;
+  line-height: 30px;
+
+}
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(229, 70, 70);
+}
+
+.footer-left{
+  font-size: 24px;
+}
+
